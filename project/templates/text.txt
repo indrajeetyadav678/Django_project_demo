@@ -1,0 +1,3 @@
+!-- //title =home because of base.html file {% block title %}home{% endblock %} ke liye
+    // and we use extends block  and load django tag in top of page idf we want title=product without using block tag ({% block title %}home{% endblock %})
+    // you can se the position of  extends block  and load django tag in contact file -->

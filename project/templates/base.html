@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}home{% endblock %}</title>
+</head>
+<body>
+    <ul id="Navbar" style="width:100%; display: flex; justify-content: space-around; list-style: none; align-items: center; height: 50px; background-color: black;">
+        <li><a href="" >Shadi Wale Baba</a></li>
+        <li id="nav1"><a href="/" >Home</a></li>
+        <li><a href="/about-us" >About</a></li>
+        <li><a href="/services" >services</a></li>
+        <li><a href="/product" >Product</a></li>
+        <li><a href="{% url 'contact' %}" >Contact</a></li>
+        <li><a href="{% url 'contact' %}" >Login</a></li>
+        <li><a href="{% url 'contact' %}" >Signup</a></li>
+    </ul>
+    <div id="content">
+        {% block content %}
+
+        {% endblock  %}
+
+    </div>
+    <footer id="footer">
+        @This website is Developed by the Indrajeet
+    </footer>
+</body>
+</html>
