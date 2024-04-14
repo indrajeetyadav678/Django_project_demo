@@ -16,3 +16,9 @@ def product(request):
 
 def contact(request):
     return render(request, "Contact.html")
+
+def signuppage(request):
+    return render(request, "Signup.html")
+
+def loginpage(request):
+    return render(request, "Login.html")
